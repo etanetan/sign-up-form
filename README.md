@@ -1,6 +1,6 @@
 # Sign-Up Form
 
-This is a sign up page project done through <a href="https://www.theodinproject.com">The Odin Project></a>
+This is a sign up page project done through <a href="https://www.theodinproject.com">The Odin Project</a>
 
 I learned about CSS variables and units, using custom fonts, absolute and relative positioning, HTML forms, and more styling tools.
 
