@@ -1,43 +1,139 @@
-img {
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+/* custom colors including a whiteish, grayish, and a green */
+:root {
+    --color1: rgb(207, 207, 207);
+    --color2: rgba(237, 237, 237, 0.75);
+    --color3: rgba(19, 74, 19, 0.807);
+}
+/* placing the background image on its section */
+.imgbackground {
     width: 30vw;
     height: 100vh;
     margin-left: 10vw;
 }
+
 body {
     margin: 0px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-a {
-    color: rgba(255, 255, 255, 0.75);
-}
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+} 
 
+a {
+    color: var(--color2);
+}
+/* container to hold everything on the page */
 .container {
     display: flex;
     flex-direction: row;
     margin-right: 10vw;
 }
+/* placing the logo section with a background to contrast from img */
+.logo {
+    position: absolute;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+    font-size: 64px;
+    height: 12vh;
+    width: 30vw;
+    top: 22vh;
+    left: 10vw;
+}
+
+.logoimg {
+    mix-blend-mode: multiply;
+    color: white;
+    height: 12vh;
+}
+/* placing the image credit at the bottom of the image */
 .credit {
     position: absolute;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--color2);
     font-size: 10px;
     bottom: 12px;
     left: 265px;
 }
+/* flex container for the right side of the page */
 .rightside {
     display: flex;
     flex-direction: column;
 }
+/* have the top and bottom take up the same amount of space */
 .top, .bottom{
-    background-color: rgb(244, 244, 244);
-    height: 37vh;
+    height: 35vh;
 }
+
 .biggertext {
     font-size: 18px;
-    font-weight:600;
-    color: black;
-    margin: 8.5rem 7rem 3rem 2rem;
+    color: var(--color1);
+    margin: 7rem 7rem 3rem 2rem;
 }
+/* the middle is a slightly different color to have contrast */
 .middle {
-    height: 26vh;
-    box-shadow: 0px 5px black;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+/* have the input for the form be in 3 rows of 2 */
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* move form title to the left */
+.formtitle {
+    margin-left: 6vh;
+}
+
+.formtitle, .formstuff {
+    color: var(--color1);
+}
+/* have the label above the user input fields */
+.formstuff {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 10vw 1vh 3.5vw;
+    gap: 5px;
+}
+/* the actual input should just be a border for user to put text into */
+input {
+    border-radius: 5px;
+    border: 1px solid var(--color3);
+    background: black;
+    color: var(--color1);
+}
+
+/* place the button below the form inputs */
+button {
+    margin: 3rem 3rem 3rem 3rem;
+    width: 15vw;
+    height: 7vh;
+    background-color: black;
+    border-radius: 7px;
+    color: var(--color3);
+    border: 2px solid var(--color3);
+    font-size: 18px;
+    font-weight: 700;
+}
+/* have the button swap background and text color when hovering */
+button:hover {
+    background-color: var(--color3);
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+/* have the log in be below the create account button */
+.login {
+    color: var(--color1);
+    margin: 0rem 3rem 3rem 3rem;
+}
+/* undo the underline under the anchor tag */
+.loginlink {
+    text-decoration: none;
+}
+/* have log in link turn green when hovering */
+.loginlink:hover {
+    color: var(--color3);
 }

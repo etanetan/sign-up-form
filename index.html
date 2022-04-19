@@ -9,7 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <img src="images/coding.jpg" alt="Matrix Numbers">
+        <img class="imgbackground" src="images/coding.jpg" alt="Matrix Numbers">
+        <div class="logo">
+            <img src="images/computer.png" class="logoimg">
+            <div class="logotext">Code</div>
+        </div>
         <div class="credit">Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus
             Spiske</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
         <div class="rightside">
@@ -17,9 +21,46 @@
                 <div class="biggertext">This is not a real online service! This is a project made to
                     show a page for you to see the things I can do with code.<br>Sign up <em>now</em> to get started.<br><br>Thank <em>you</em> for joining us.</div>
             </div>
-            <div class="middle"></div>
+
+            <div class="middle">
+                <p class="formtitle">Let's do this!<br></p>
+                <form action="#">
+                    
+                    <div class="formstuff">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+
+                    <div class="formstuff">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+
+                    <div class="formstuff">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="formstuff">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" name="phone-number" id="phone-number" required>
+                    </div>
+
+                    <div class="formstuff">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="formstuff">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </form>
+            </div>
+
             <div class="bottom">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
+                <p class="login">Already have an account? <a class="loginlink" href="#">Log in</a></p>
             </div>
         </div>
     </div>
